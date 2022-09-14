@@ -1,0 +1,15 @@
+Analisi Complessità Divide-et-impera
+Caso 1 chiamata o a destra o a sinistra
+//Complessità:
+//T(n) = T(n/2) + O(1);
+//Master Theorem: a = 1 b = 2
+//g(n) = n ^(log__1 2)  f(n) = O(1) => g(n) = n^(0) = 1 , f(n) = O(1)
+//f(n) = Theta(1)
+// Caso 2: T(n) = Theta(log n);
+Caso 2 chiamate sia a destra che a sinistra
+//Complessità:
+//T(n) = 2T(n/2) + O(1);
+//Master Theorem: a = 2 b = 2
+//g(n) = n ^(log__2 2)  f(n) = O(1) => g(n) = n^(1) = n , f(n) = O(1)
+//f(n) = O(n^1 - 1); epsilon = 1;
+// Caso 1: T(n) = Theta(n);
